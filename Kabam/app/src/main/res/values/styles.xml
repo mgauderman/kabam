@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+    </style>
+
+    <!--<item name="colorControlNormal">#c5c5c5</item>-->
+    <!--<item name="colorControlActivated">@color/accent</item>-->
+    <!--<item name="colorControlHighlight">@color/accent</item>-->
+
+    <style name="TVTheme" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TVTheme.Large">
+        <item name="android:textSize">23dp</item>
+    </style>
+
+    <style name="TVTheme.Large.GC">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="TVTheme.Medium">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="TVTheme.Medium.GC">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TVTheme.Small">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="TVTheme.Small.GC">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="BTheme">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="BTheme.Small">
+        <item name="android:textAppearance">@style/TVTheme.Small.GC</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <style name="BTheme.Medium">
+        <item name="android:textAppearance">@style/TVTheme.Medium.GC</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="BTheme.Large">
+        <item name="android:textAppearance">@style/TVTheme.Large.GC</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="TPTheme" parent="@android:style/Widget.Material.TimePicker">
+        <item name="android:textAppearance">@style/TVTheme.Medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

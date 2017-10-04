@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TVTheme.Large.GC"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:text="Ayush Saraswat"
+        android:id="@+id/name" />
+
+    <Button
+        style="@style/BTheme.Large"
+        android:background="@drawable/red_button"
+        android:layout_marginTop="20dp"
+        android:text="My Timeline"
+        android:id="@+id/timeline"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        style="@style/BTheme.Large"
+        android:background="@drawable/red_button"
+        android:layout_marginTop="20dp"
+        android:text="My Classes"
+        android:id="@+id/classes" />
+
+    <Button
+        style="@style/BTheme.Large"
+        android:background="@drawable/red_button"
+        android:layout_marginTop="20dp"
+        android:text="Log Out"
+        android:id="@+id/logOut" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/blitz2"
+        android:layout_marginTop="40dp"
+        />
+
+</LinearLayout>

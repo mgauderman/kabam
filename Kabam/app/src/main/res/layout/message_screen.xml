@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        />
+
+    <EditText
+        style="@style/ETTheme.Wide"
+        android:background="@drawable/red_edittext"
+        android:textSize="20dp"
+        android:hint="Chat Title"
+        android:id="@+id/chatTitle"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                style="@style/TVTheme.Medium"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="To:"
+                android:id="@+id/ToLabel"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:layout_alignTop="@+id/participantList" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ToLabel"
+                android:layout_toLeftOf="@+id/addParticipants"
+                android:layout_toStartOf="@+id/addParticipants"
+                android:layout_alignParentTop="true"
+                android:id="@+id/participantList"
+                android:padding="5dp">
+
+            </LinearLayout>
+
+            <Button
+                style="@style/BTheme.Medium"
+                android:background="@drawable/red_button"
+                android:text="+"
+                android:id="@+id/addParticipants"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:enabled="true"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="1dp"
+            android:measureWithLargestChild="false"
+            android:background="#fff55454"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/topDivider"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/topDivider"
+            android:layout_above="@+id/bottomDivider">
+
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                class="android.support.v7.widget.RecyclerView"
+                android:id="@+id/mRecyclerView"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="1dp"
+            android:measureWithLargestChild="false"
+            android:background="#fff55454"
+            android:id="@+id/bottomDivider"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignTop="@+id/textInput" />
+
+        <EditText
+            style="@style/ETTheme"
+            android:background="@drawable/red_edittext"
+            android:id="@+id/textInput"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/sendButton"
+            android:layout_toStartOf="@+id/sendButton"
+            android:layout_alignBottom="@+id/relativeLayout"
+            android:padding="12dp"
+            android:hint="Your Message..." />
+
+        <Button
+            style="@style/BTheme.Large"
+            android:background="@drawable/red_button_thin"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="Send"
+            android:id="@+id/sendButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:enabled="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/RedActionBar</item>
+    </style>
+
+    <style name="RedActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#fff55454</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:titleTextStyle">@style/KabamTextStyle</item>
+    </style>
+
+    <style name="KabamTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="ETTheme" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:color">#fff55454</item>
+        <item name="android:layout_width">280dp</item>
+        <item name="android:textAppearance">@style/TVTheme.Medium.GC</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="ETTheme.Wide">
+        <item name="android:layout_width">300dp</item>
+    </style>
+</resources>

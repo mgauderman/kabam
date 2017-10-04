@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Kabam</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">928174903942306</string>
+
+    <!--For Add Event page-->
+    <string name="event_name">Event Name</string>
+    <string name="event_date_due_date">Event Date/Due Date</string>
+    <string name="description">Description</string>
+
+</resources>

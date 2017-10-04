@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addEventScrollView"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TVTheme.Large.GC"
+            android:layout_width="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Event/Homework Name"
+            android:id="@+id/homeworkName"
+            android:layout_marginTop="16dp" />
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="Class Name"-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_marginBottom="16dp"/>-->
+
+        <TextView
+            style="@style/TVTheme.Medium.GC"
+            android:layout_width="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Class Name"
+            android:id="@+id/className"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <TextView
+            style="@style/TVTheme.Large"
+            android:text="Date: Event date here"
+            android:id="@+id/eventDetailsDate"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            style="@style/TVTheme.Large"
+            android:text="Time: Event time here"
+            android:id="@+id/eventDetailsTime"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            style="@style/TVTheme.Large"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Description: Event description here"
+            android:id="@+id/eventDetailsDescription"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp" />
+
+
+    </LinearLayout>
+</ScrollView>
